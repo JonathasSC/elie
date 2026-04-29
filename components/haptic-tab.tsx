@@ -35,12 +35,12 @@ export function HapticTab(props: BottomTabBarButtonProps) {
       onPressIn={animateIn}
       onPressOut={animateOut}
     >
-      <Animated.View 
+      <Animated.View
         style={[
-          styles.circle, 
-          { 
-            backgroundColor: focused ? '#333' : 'transparent',
-            transform: [{ scale: scaleValue }] 
+          styles.circle,
+          {
+            backgroundColor: focused ? 'rgba(255,255,255,0.15)' : 'transparent',
+            transform: [{ scale: scaleValue }]
           }
         ]}
       >
