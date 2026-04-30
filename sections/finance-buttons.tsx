@@ -29,8 +29,7 @@ export default function FinanceButtonsSection() {
                     <Ionicons name='stats-chart' size={16}/>
                 </View>
                 <Text style={styles.actionButtonTitle}>Investimento</Text>
-            </TouchableOpacity>
-            
+            </TouchableOpacity>    
         </ScrollView>
     )
 }

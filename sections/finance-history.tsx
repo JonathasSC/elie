@@ -1,12 +1,16 @@
 import FinanceItem from '@/components/finance-item';
+import { expensesRepository } from '@/repositories/expenses-repository';
+import { incomesRepository } from '@/repositories/incomes-repository';
 import { StyleSheet, Text, View } from "react-native";
 
 export default function FinanceHistorySection() {
+    const expenses = expensesRepository.findAll();
+    const incomes = incomesRepository.findAll();
+
     return (
         <View>
             <Text style={styles.sectionTitle}>Extrato</Text>
             <View style={styles.list}>
-
                 <FinanceItem 
                     type="expense" 
                     category="Alimentação" 
